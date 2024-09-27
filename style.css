@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --clr-primary: rgba(0,213,255,1);
+    --clr-container-bg: #fff;
+    --clr-btn-bg: rgb(0, 122, 209);
+    --clr-btn-hover-bg: rgba(0,175,255,1);
+}
+*{
+box-sizing: border-box;
+margin: 0;
+padding-top: 11px;
+
+}
+
+body{
+font-family: sans-serif;
+min-height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--clr-primary);
+font-family: Arial, Helvetica, sans-serif;
+position: relative;
+}
+
+.conteiner{
+    width: 350px;
+    min-height: 350px;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--clr-container-bg);
+    color: #333;
+    text-align: center;
+}
+
+.contenido{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    padding-inline: 20px;
+    font-size: 18px;
+}
+input{
+    padding: 8px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+
+.button{
+padding: 10px 20px;
+font-size: 16px;
+background-color: #333;
+color: #fff;
+border-radius: 10px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+#resultado{
+padding: 15px;
+font-size: 20px;
+margin-top: 10px;
+text-align: center;
+}
+.atributo{
+    position: absolute;
+    bottom: 3px;
+}
+
+@media ( max-width:768px){
+.conteiner{
+width:300px;
+}
+}
